@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonic-Driven Covers</title>
+  <link rel="stylesheet" href="styles/universal.css">
+</head>
+<body>
+  <h1>sonic cover generator</h1>  
+  <div class="controls">
+
+    <div class="dropdown">
+      <h2 onclick="toggleDropdown('moodButtons')">mood</h2>
+      <div id="moodButtons" class="dropdown-content">
+        <button onclick="setMood('Intense')">intense</button>
+        <button onclick="setMood('Calm')">calm</button>
+        <button onclick="setMood('Melancholic')">melancholic</button>
+        <button onclick="setMood('Warm')">warm</button>
+        <button onclick="setMood('Somber')">somber</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <h2 onclick="toggleDropdown('atmosphereButtons')">atmosphere</h2>
+      <div id="atmosphereButtons" class="dropdown-content">
+        <button onclick="setAtmosphere('Edgy')">edgy</button>
+        <button onclick="setAtmosphere('Dreamy')">dreamy</button>
+        <button onclick="setAtmosphere('Ethereal')">ethereal</button>
+        <button onclick="setAtmosphere('Soft')">soft</button>
+        <button onclick="setAtmosphere('Melancholic')">melancholic</button>
+        <button onclick="setAtmosphere('Desolate')">desolate</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <h2 onclick="toggleDropdown('instrumentButtons')">primary instrument</h2>
+      <div id="instrumentButtons" class="dropdown-content">
+        <button onclick="setInstrument('Synth')">synth</button>
+        <button onclick="setInstrument('Guitar')">guitar</button>
+        <button onclick="setInstrument('Vocals')">vocals</button>
+      </div>
+    </div>
+
+  </div>
+
+  <canvas id="albumCanvas" width="600" height="600"></canvas>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
